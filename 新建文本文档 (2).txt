@@ -1,0 +1,49 @@
+ create table xinwen(
+ sId tinyint unsigned primary key auto_increment ,
+ userName char(50) not null,
+ regTime  timestamp default current_timestamp
+ );
+
+insert xinwen(userName) values('S8决赛IG3:0夺冠');
+insert xinwen(userName) values('冰封侠指责甄子丹');
+insert xinwen(userName) values('冲超失败绿城内讧');
+insert xinwen(userName) values('朱亚文憾失影帝');
+insert xinwen(userName) values('汉中公交交通事故');
+insert xinwen(userName) values('苹果股价暴跌');
+insert xinwen(userName) values('中国抗震桥梁合龙');
+insert xinwen(userName) values('北京调整医疗费用');
+insert xinwen(userName) values('易烊千玺个人公司');
+insert xinwen(userName) values('冲超失败绿城内讧');
+insert xinwen(userName) values('罗家英悼念蓝洁瑛');
+insert xinwen(userName) values('靓绝五台山');
+insert xinwen(userName) values('lol总决赛');
+insert xinwen(userName) values('Easyhoon离队');
+insert xinwen(userName) values('大s黄子佼破冰');
+insert xinwen(userName) values('沈阳越野车冲撞');
+insert xinwen(userName) values('警犬被盗案');
+insert xinwen(userName) values('双汇回应非洲猪瘟');
+insert xinwen(userName) values('国象女子等级分');
+insert xinwen(userName) values('蔡依林与姐姐同台');
+insert xinwen(userName) values('雷霆4连胜');
+insert xinwen(userName) values('保罗压哨三分');
+insert xinwen(userName) values('重庆公交坠江原因');
+insert xinwen(userName) values('游泳世界杯首日');
+insert xinwen(userName) values('国内油价最大降幅');
+
+
+
+create teble man(
+     mid int primary key auto_increment,
+     mname char(20) unique not null,
+     wid tinyint
+     );
+
+insert man(mname,wid) values('黄晓明',1),('高云翔',2),('冯绍峰',3);
+
+create teble man(
+    -> wid int primary key auto_increment,
+    -> wname char(20) unique not null,
+    -> mid tinyint
+    -> );
+
+insert woman(wname,wid) values('严明',1),('董璇',2),('马骁骁',3);
